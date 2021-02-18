@@ -4,3 +4,22 @@
   margin: 0;
   padding: 0;
 }
+body{
+  height: 100vh;
+}
+main {
+  height: calc(100% - 100px);
+  display: flex;
+}
+.gallery{
+  overflow: auto;
+  font-size: 39px;
+}
+aside{
+  width: 200px;
+  background: red;
+  flex-shrink: 0;
+}
+footer{
+  height: 100px;
+}
