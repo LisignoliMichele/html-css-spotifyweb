@@ -14,12 +14,23 @@ main {
 .gallery{
   overflow: auto;
   font-size: 39px;
+  background-color: #141922;
 }
 aside{
   width: 200px;
   background: red;
   flex-shrink: 0;
+  background: #000;
+}
+.upgrade{
+  position: fixed;
+  height: 90px;
+  background-color: rgba(0, 0, 0, 0.3);
+  top:0;
+  left: 200px;
+  right: 0;
 }
 footer{
   height: 100px;
+  background-color: #282828;
 }
