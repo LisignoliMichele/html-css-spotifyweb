@@ -160,26 +160,32 @@ footer .right{
 }
 /* media */
 @media screen and (max-width: 1100px) {
+  footer{
+    padding: 0 10px;
+  }
   .played-time{
     margin-right: 15px;
   }
   .remaining-time{
     margin-left: 15px;
   }
-}
-@media screen and (max-width: 700px) {
-  footer{
-    padding: 0 10px;
-  }
   .playing_album_text{
-    margin: 0 10px 0 10px;
+    margin: 0 15px 0 15px;
+  }
+}
+@media screen and (max-width: 700px){
+  .time small{
+    font-size: 9px;
   }
   .list_none li:not(:last-child){
     margin-right: 10px;
   }
-  .time small{
-    font-size: 9px;
+  .sharing{
+    position: absolute;
+    bottom: 100px;
+    right: 15px;
   }
+}
 @media screen and (max-width: 600px){
   footer{
     flex-wrap: wrap;
@@ -197,4 +203,18 @@ footer .right{
     flex-basis: 40%;
     order: 2;
   }
+  .playback-list{
+    margin-bottom: 0;
+  }
+  .time{
+    margin-bottom: 5px;
+  }
+}
+@media screen and (max-width: 300px){
+  footer .right {
+      flex-basis: 40%;
+    }
+    i{
+      font-size: 13px;
+    }
 }
