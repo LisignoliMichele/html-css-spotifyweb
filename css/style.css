@@ -20,6 +20,24 @@ h3{
 color: #fff;
 text-transform: uppercase;
 }
+h2{
+  color: #fff;
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+h4{
+  color: #ffffff;
+  font-size: 18px;
+  margin: 10px 0;
+}
+.music p{
+  color: #666666;
+  font-size: 11px;
+}
+section > p{
+  font-weight: 600;
+  color: #666666;
+}
 /* stucture */
 body{
   height: 100vh;
@@ -163,7 +181,46 @@ aside{
     right:20px;
   }
 }
-
+/* gallery */
+.gallery{
+  width: 100%;
+  padding: 100px 20px;
+}
+section{
+  margin: 50px 0;
+}
+.gallery_nav{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.gallery_nav  a{
+  text-decoration: none;
+  color: #666666;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 30px;
+}
+.gallery_nav li:not(:last-child){
+  margin-right: 30px;
+}
+.album_music{
+  display: flex;
+  margin-top: 30px;
+}
+.music{
+  width: calc((100% / 6) - 20px);
+  text-align: center;
+}
+.music img{
+  width: 100%;
+}
+.music:not(:last-child){
+  margin-right: 20px;
+}
+#popolar img{
+  border-radius: 50%;
+}
 /* footer */
 footer{
   height: 140px;
