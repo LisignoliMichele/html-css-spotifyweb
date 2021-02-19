@@ -15,6 +15,11 @@
 .list_none li:not(:last-child){
   margin-right: 20px;
 }
+/* tipo */
+h3{
+color: #fff;
+text-transform: uppercase;
+}
 /* stucture */
 body{
   height: 100vh;
@@ -42,9 +47,47 @@ aside{
   left: 200px;
   right: 0;
 }
+/* upgrade */
+.upgrade-btn{
+  background-color: red;
+  position:absolute;
+  right:40px;
+  top: 25px;
+  padding: 15px 30px;
+  background-color: transparent;
+  border-radius: 25px;
+  color: #fff;
+  border: 1px solid #fff;
+  text-transform: uppercase;
+
+}
 /* aside menu */
+.menu{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 25px;
+  overflow: auto;
+}
 .logo img{
-  width: 70%;
+  width: 100%;
+}
+.main_nav img,
+.playlist img{
+  max-width: 30px;
+}
+.menu a{
+  text-decoration: none;
+  color: #505050;
+  font-weight: 600;
+}
+.new-playlist,
+.main_nav li{
+  display: flex;
+  align-items: center;
+}
+.playlist{
+  overflow: auto;
 }
 /* footer */
 footer{
