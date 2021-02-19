@@ -65,9 +65,8 @@ aside{
 .menu{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   padding: 10px 25px;
-  overflow: auto;
+  overflow: hidden;
 }
 .logo img{
   width: 100%;
@@ -76,10 +75,19 @@ aside{
 .playlist img{
   max-width: 30px;
 }
+.menu li{
+  margin-bottom: 5px;
+}
 .menu a{
   text-decoration: none;
   color: #505050;
   font-weight: 600;
+}
+.playlist_title{
+  margin-top: 20px;
+}
+.new-playlist{
+  margin: 5px 0;
 }
 .new-playlist,
 .main_nav li{
@@ -88,6 +96,16 @@ aside{
 }
 .playlist{
   overflow: auto;
+}
+.user{
+  margin-top: auto;
+}
+.user hr{
+  border: 1px solid #505050;
+  margin: 5px 0;
+}
+.user p{
+  color: #fff;
 }
 /* footer */
 footer{
