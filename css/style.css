@@ -71,9 +71,17 @@ aside{
 .logo img{
   width: 100%;
 }
-.main_nav img,
-.playlist img{
+.menu_icons{
+  fill: #505050;
+}
+.main_nav svg,
+.playlist svg{
   max-width: 30px;
+}
+.main_nav svg,
+.playlist svg,
+.user img{
+  margin-right: 10px;
 }
 .menu li{
   margin-bottom: 5px;
@@ -90,7 +98,8 @@ aside{
   margin: 5px 0;
 }
 .new-playlist,
-.main_nav li{
+.main_nav li,
+.profile{
   display: flex;
   align-items: center;
 }
@@ -103,6 +112,18 @@ aside{
 .user hr{
   border: 1px solid #505050;
   margin: 5px 0;
+}
+.profile_picture{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: red;
+}
+.profile img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #505050;
 }
 .user p{
   color: #fff;
