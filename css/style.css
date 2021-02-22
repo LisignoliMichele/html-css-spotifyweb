@@ -227,6 +227,9 @@ section{
   font-weight: 700;
   line-height: 30px;
 }
+.gallery_nav li{
+  position: relative;
+}
 .gallery_nav li:not(:last-child){
   margin-right: 30px;
 }
@@ -247,32 +250,19 @@ section{
 #popolar img{
   border-radius: 50%;
 }
-@media screen and (max-width: 1100px) {
-  .album_music{
-    flex-wrap: wrap;
-  }
-  .music{
-    width: calc((100% / 3) - 20px);
-    margin-bottom: 30px;
-  }
-}
-@media screen and (max-width: 700px){
-  .music{
-    width: calc((100% / 2) - 20px);
-  }
-  .gallery_nav{
-    flex-direction: column
-  }
-}
-@media screen and (max-width: 500px){
-  .music{
-    width: 100%;
-  }
-  .music:not(:last-child){
-    margin-right: 0;
-  }
-}
 /* effects */
+.gallery_nav li:hover::after{
+  content: "";
+  display: block;
+  position: absolute;
+  height: 3px;
+  right: calc(50% - 15px);
+  width: 30px;
+  background-color: #00ff55;
+}
+.gallery_nav li:hover a{
+  color: #ffffff;
+}
 .album_photo{
   position: relative;
   overflow: hidden;
@@ -290,6 +280,37 @@ section{
 }
 .music:hover .album_photo img{
   filter: brightness(0.5);
+}
+@media screen and (max-width: 1100px) {
+  .album_music{
+    flex-wrap: wrap;
+  }
+  .music{
+    width: calc((100% / 3) - 20px);
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 700px){
+  .music{
+    width: calc((100% / 2) - 20px);
+  }
+  .gallery_nav{
+    flex-direction: column
+  }
+  .gallery_nav li:hover::after{
+    height: 30px;
+    width: 3px;
+    top: 0;
+    left: -15px;
+  }
+}
+@media screen and (max-width: 500px){
+  .music{
+    width: 100%;
+  }
+  .music:not(:last-child){
+    margin-right: 0;
+  }
 }
 /* footer */
 footer{
