@@ -105,15 +105,12 @@ aside{
 .small-logo{
   display: none;
 }
-.menu_icons{
-  fill: #666666;
-}
-.main_nav svg,
-.playlist svg{
+.main_nav img,
+.playlist_title img{
   max-width: 30px;
 }
-.main_nav svg,
-.playlist svg,
+.main_nav img,
+.playlist_title img,
 .user img{
   margin-right: 10px;
 }
@@ -132,8 +129,8 @@ aside{
   margin: 15px 0;
 }
 .new-playlist,
-.main_nav li,
-.profile{
+.main_nav a,
+.user a{
   display: flex;
   align-items: center;
 }
@@ -149,6 +146,7 @@ aside{
 }
 .user i{
   color: #666666;
+  margin-right: 10px;
 }
 .profile_picture{
   width: 40px;
@@ -174,16 +172,15 @@ aside{
   .playlist_title,
   .playlist,
   .menu p,
-  .menu hr,
-  .menu a{
+  .menu hr{
     display: none;
   }
   .upgrade{
     left: 60px;
   }
-  .user i{
-    margin: 0 0 20px 5px;
+  .user a{
     font-size: 20px;
+    margin: 0 0 20px 5px;
   }
   .small-logo{
     display: block;
@@ -192,6 +189,22 @@ aside{
   .upgrade-btn{
     right:20px;
   }
+}
+/* effects */
+.menu a:hover img{
+  filter: brightness(2);
+}
+.menu a:hover,
+.menu a:hover i{
+  color: #ffff;
+}
+.menu a:hover::before{
+  content: "";
+  height: 30px;
+  width: 3px;
+  background-color: #00ff55;
+  position: absolute;
+  left: 0;
 }
 /* gallery */
 .gallery{
@@ -372,9 +385,6 @@ footer .right{
 }
 /* media */
 @media screen and (max-width: 1100px) {
-  footer{
-    padding: 0 10px;
-  }
   .played-time{
     margin-right: 15px;
   }
@@ -401,7 +411,7 @@ footer .right{
 @media screen and (max-width: 600px){
   footer{
     flex-wrap: wrap;
-    padding: 10px 15px;
+    padding: 10px 30px;
   }
   footer .center{
     flex-basis: 100%;
@@ -430,6 +440,9 @@ footer .right{
   }
 }
 @media screen and (max-width: 330px){
+  footer{
+  padding: 10px 5px;
+}
   footer .right {
       flex-basis: 50%;
     }
