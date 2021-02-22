@@ -82,6 +82,13 @@ aside{
   border: 1px solid #fff;
   text-transform: uppercase;
 }
+@media screen and (max-width: 330px){
+  .upgrade-btn{
+    padding: 15px;
+    font-size: 12px;
+    border-radius: 20px;
+  }
+}
 /* aside menu */
 .menu{
   display: flex;
@@ -275,7 +282,7 @@ footer .left{
 }
 .playing_album_photo img{
   width: 100%;
-  min-width: 25px;
+  min-width: 50px;
 }
 .playing_album_text{
   margin: 0 60px 0 30px;
@@ -402,10 +409,12 @@ footer .right{
   }
   footer .right{
     flex-basis: 50%;
+    max-width: 30%;
     order: 3;
   }
   footer .left{
     flex-basis: 40%;
+    max-width: 35%;
     order: 2;
   }
   .playback-list{
@@ -415,16 +424,28 @@ footer .right{
     margin-bottom: 5px;
   }
 }
-@media screen and (max-width: 300px){
+@media screen and (max-width: 400px){
+    footer .right li:not(:last-child){
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 330px){
   footer .right {
-      flex-basis: 40%;
+      flex-basis: 50%;
     }
-    i{
-      font-size: 13px;
-    }
-    .upgrade-btn{
-      padding: 15px;
-      font-size: 12px;
-      border-radius: 20px;
-    }
+  footer .right ul{
+    display: block;
+    font-size: 13px;
+    right: 5px;
+    bottom: 90px;
+  }
+  footer .center li:not(:last-child){
+    margin-right: 12px;
+  }
+  footer .right li:not(:last-child){
+    margin-right: 0;
+  }
+  .sound_ico{
+    margin-left: 0;
+  }
 }
