@@ -85,6 +85,14 @@ aside{
   border: 1px solid #fff;
   text-transform: uppercase;
 }
+/* effect */
+.upgrade-btn{
+transition: background 1s;
+}
+.upgrade-btn:hover{
+  background-color: #fff;
+  color: #000;
+}
 @media screen and (max-width: 330px){
   .upgrade-btn{
     padding: 15px;
@@ -162,7 +170,7 @@ aside{
   border-radius: 50%;
   background-color: #505050;
 }
-.user p{
+.user .profile p{
   color: #fff;
 }
 @media screen and (max-width: 600px){
