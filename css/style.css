@@ -15,6 +15,9 @@
 footer .list_none li:not(:last-child){
   margin-right: 20px;
 }
+a{
+  text-decoration: none;
+}
 /* tipo */
 h3{
 color: #fff;
@@ -118,7 +121,6 @@ aside{
   margin-bottom: 10px;
 }
 .menu a{
-  text-decoration: none;
   color: #666666;
   font-weight: 600;
 }
@@ -220,7 +222,6 @@ section{
   flex-wrap: wrap;
 }
 .gallery_nav  a{
-  text-decoration: none;
   color: #666666;
   text-transform: uppercase;
   font-weight: 700;
@@ -270,6 +271,25 @@ section{
   .music:not(:last-child){
     margin-right: 0;
   }
+}
+/* effects */
+.album_photo{
+  position: relative;
+  overflow: hidden;
+}
+.music:hover .album_photo::after{
+  font-family: "Font Awesome 5 Free";
+  content: "\f144";
+  color: white;
+  font-size: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.music:hover .album_photo img{
+  filter: brightness(0.5);
 }
 /* footer */
 footer{
