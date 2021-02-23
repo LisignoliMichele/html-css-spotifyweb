@@ -101,6 +101,15 @@ transition: background 1s;
     border-radius: 20px;
   }
 }
+@media screen and (max-height: 250px){
+  .upgrade{
+    display: none;
+  }
+  .gallery,
+  .menu{
+  z-index: -1
+  }
+}
 /* aside menu */
 .menu{
   display: flex;
