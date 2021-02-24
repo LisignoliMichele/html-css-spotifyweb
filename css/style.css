@@ -387,18 +387,61 @@ footer .left{
   min-width: 50px;
 }
 .playing_album_text{
-  margin: 0 60px 0 30px;
+  margin: 0 10px 0 5px;
+  position: relative;
+  overflow: hidden;
+  min-height: 40px;
+  width: 100%;
+  min-width: 80px;
+}
+.playing_album_text h5{
+  position: absolute;
+  font-size: 18px;
+  white-space: nowrap;
+  top: 0;
 }
 .playing_album_text p{
-  line-height: 0.7;
-}
-.playing_album_text small{
-  color: #505050;
+  color: #666666;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  position: absolute;
+  white-space: nowrap;
+  top: 20px;
 }
 .playing_album_save a{
   color: #505050;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+/* text effects */
+.playing_album_text p{
+  animation-name: text_move;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes text_move{
+  0%{
+    left: -100%;
+  }
+  100%{
+    left: 100%;
+  }
+}
+.playing_album_text h5{
+  animation-name: text_title_move;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes text_title_move{
+  0%{
+    left: 100%;
+  }
+  50%{
+    left: -110%;
+  }
+  100%{
+    left: 100%;
+  }
 }
 /* footer center */
 footer .center{
