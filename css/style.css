@@ -269,12 +269,13 @@ section{
 }
 .music img{
   width: 100%;
+  display: block;
   transition: filter .5s;
 }
 .music:not(:last-child){
   margin-right: 20px;
 }
-#popolar .music img{
+#popolar .album_photo{
   border-radius: 50%;
 }
 /* gallery effects */
