@@ -411,7 +411,7 @@ footer .left{
   color: #505050;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
 }
-/* text effects */
+/* playing album effects */
 .playing_album_text p{
   animation-name: text_move;
   animation-duration: 2s;
@@ -442,6 +442,14 @@ footer .left{
   100%{
     left: 100%;
   }
+}
+.playing_album_save li:nth-child(odd):hover a{
+  color: #ff0700;
+  text-shadow: 0 0 20px #ff0700;
+}
+.playing_album_save li:nth-child(even):hover a{
+  color: #ffb920;
+    text-shadow: 0 0 20px #ffb920;
 }
 /* footer center */
 footer .center{
